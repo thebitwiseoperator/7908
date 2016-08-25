@@ -1,0 +1,51 @@
+<div id="versatile-rack" class="image-background">
+    <audio style="display:none;" autoplay="true" controls="none">
+        <source src="audio/versatile-rack.aac" type="audio/mp4">
+        <source src="audio/versatile-rack.ogg" type="audio/ogg">
+    </audio>
+    <nav id="side-navigation">
+        <h2>Cycles</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('refresh');">Refresh</a></li>
+            <li><a onclick="GSI.switchPage('sanitary');">Sanitary</a></li>
+            <li><a onclick="GSI.switchPage('gentle-dry');">Gentle Dry</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('moving-hanger');">Moving Hanger</a></li>
+            <li><a onclick="GSI.switchPage('aroma-kit');">Aroma Kit</a></li>
+            <li><a onclick="GSI.switchPage('versatile-rack');" class="side-nav-active">&bull;&nbsp;&nbsp;Versatile Rack</a></li>
+            <li><a onclick="GSI.switchPage('portable-water-container');">Portable Water Container</a></li>
+            <li><a onclick="GSI.switchPage('pants-crease');">Pants Crease</a></li>
+        </ul>
+        <h2>Smart Features</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('smart-diagnosis');">Smart Diagnosis</a></li>
+            <li><a onclick="GSI.switchPage('download-cycle');">Download Cycle</a></li>
+            <li><a onclick="GSI.switchPage('styler-coach');">Styler Coach</a></li>
+        </ul>
+    </nav>
+    <div id="right-content">
+        <h1>Versatile Rack</h1>
+        <br />
+        <p class="headline">
+            The rack allows you to steam and freshen unconventional items that don’t use hangers.
+        </p>
+        <div id="versatile-rack-picture-wrap">
+            <div id="versatile-rack-picture"></div>
+        </div>
+    </div>
+    <div id="left-arrow" onclick="GSI.switchPage('aroma-kit')"></div>
+    <div id="right-arrow" onclick="GSI.switchPage('portable-water-container')"></div>
+</div>
+
+<script type="text/javascript">
+    $("#versatile-rack-picture").css("opacity", "0");
+    $.when($("h1, .headline").css("marginLeft", "600px").animate({
+        marginLeft: "0px"
+    }, "slow")).then(function () {
+        $("#versatile-rack-picture").css("opacity", "0").animate({
+            opacity: 1
+        }, "slow");
+    })
+</script>

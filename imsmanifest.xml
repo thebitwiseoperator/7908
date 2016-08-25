@@ -1,0 +1,183 @@
+<?xml version="1.0" standalone="no" ?>
+<manifest identifier="D321SCORM-MANIFEST" version="1.0"
+xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                            http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                            http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd" >
+<metadata>
+<schema>ADL SCORM</schema>
+<schemaversion>1.2</schemaversion>
+<adlcp:location>imsmetadata.xml</adlcp:location>
+</metadata>
+<organizations default="TOC1">
+<organization identifier="TOC1">
+<title>LG Styler</title>
+<item identifier="I_SCO0" identifierref="SCO0">
+<title>LG Styler</title>
+</item>
+</organization>
+</organizations>
+<resources>
+<resource identifier="SCO0" type="webcontent" adlcp:scormtype="sco" href="index.html">
+<file href="audio/aroma-kit.aac" />
+<file href="audio/aroma-kit.ogg" />
+<file href="audio/download-cycle.aac" />
+<file href="audio/download-cycle.ogg" />
+<file href="audio/gentle-dry.aac" />
+<file href="audio/gentle-dry.ogg" />
+<file href="audio/landing-page.aac" />
+<file href="audio/landing-page.ogg" />
+<file href="audio/moving-hanger.aac" />
+<file href="audio/moving-hanger.ogg" />
+<file href="audio/pants-crease.aac" />
+<file href="audio/pants-crease.ogg" />
+<file href="audio/portable-water-container.aac" />
+<file href="audio/portable-water-container.ogg" />
+<file href="audio/refresh.aac" />
+<file href="audio/refresh.ogg" />
+<file href="audio/sanitary.aac" />
+<file href="audio/sanitary.ogg" />
+<file href="audio/smart-diagnosis.aac" />
+<file href="audio/smart-diagnosis.ogg" />
+<file href="audio/styler-coach.aac" />
+<file href="audio/styler-coach.ogg" />
+<file href="audio/styler-coach.xmp" />
+<file href="audio/versatile-rack.aac" />
+<file href="audio/versatile-rack.ogg" />
+<file href="css/7908-tweaks.css" />
+<file href="css/bootstrap.css" />
+<file href="css/site.css" />
+<file href="css/specific-tweaks.css" />
+<file href="css/viewport-workaround.css" />
+<file href="fonts/glyphicons-halflings-regular.eot" />
+<file href="fonts/glyphicons-halflings-regular.svg" />
+<file href="fonts/glyphicons-halflings-regular.ttf" />
+<file href="fonts/glyphicons-halflings-regular.woff" />
+<file href="fonts/glyphicons-halflings-regular.woff2" />
+<file href="fonts/LG/lg_smart_bold-webfont.eot" />
+<file href="fonts/LG/lg_smart_bold-webfont.svg" />
+<file href="fonts/LG/lg_smart_bold-webfont.ttf" />
+<file href="fonts/LG/lg_smart_bold-webfont.woff" />
+<file href="fonts/LG/lg_smart_bold_italic-webfont.eot" />
+<file href="fonts/LG/lg_smart_bold_italic-webfont.svg" />
+<file href="fonts/LG/lg_smart_bold_italic-webfont.ttf" />
+<file href="fonts/LG/lg_smart_bold_italic-webfont.woff" />
+<file href="fonts/LG/lg_smart_light-webfont.eot" />
+<file href="fonts/LG/lg_smart_light-webfont.svg" />
+<file href="fonts/LG/lg_smart_light-webfont.ttf" />
+<file href="fonts/LG/lg_smart_light-webfont.woff" />
+<file href="fonts/LG/lg_smart_regular-webfont.eot" />
+<file href="fonts/LG/lg_smart_regular-webfont.svg" />
+<file href="fonts/LG/lg_smart_regular-webfont.ttf" />
+<file href="fonts/LG/lg_smart_regular-webfont.woff" />
+<file href="fonts/LG/lg_smart_regular_italic-webfont.eot" />
+<file href="fonts/LG/lg_smart_regular_italic-webfont.svg" />
+<file href="fonts/LG/lg_smart_regular_italic-webfont.ttf" />
+<file href="fonts/LG/lg_smart_regular_italic-webfont.woff" />
+<file href="fonts/LG/lg_smart_semibold-webfont.eot" />
+<file href="fonts/LG/lg_smart_semibold-webfont.svg" />
+<file href="fonts/LG/lg_smart_semibold-webfont.ttf" />
+<file href="fonts/LG/lg_smart_semibold-webfont.woff" />
+<file href="html/aroma-kit.html" />
+<file href="html/download-cycle.html" />
+<file href="html/end-of-training.html" />
+<file href="html/gentle-dry.html" />
+<file href="html/landing-page.html" />
+<file href="html/legal.html" />
+<file href="html/moving-hanger.html" />
+<file href="html/pants-crease.html" />
+<file href="html/portable-water-container.html" />
+<file href="html/quiz.html" />
+<file href="html/refresh.html" />
+<file href="html/sanitary.html" />
+<file href="html/section-1.html" />
+<file href="html/section-3.html" />
+<file href="html/section-4.html" />
+<file href="html/section-5.html" />
+<file href="html/smart-diagnosis.html" />
+<file href="html/styler-coach.html" />
+<file href="html/versatile-rack.html" />
+<file href="images/audio-muted.png" />
+<file href="images/audio-normal.png" />
+<file href="images/brushed-background.jpg" />
+<file href="images/closed-captions_1.png" />
+<file href="images/closed-captions_2.png" />
+<file href="images/header-background.png" />
+<file href="images/legalCloseButton.png" />
+<file href="images/lg_logo.png" />
+<file href="images/quiz-answer-correct.png" />
+<file href="images/quiz-answer-incorrect.png" />
+<file href="images/section-menu-close.png" />
+<file href="images/section-menu-disabled.png" />
+<file href="images/section-menu-enabled.png" />
+<file href="images/training/aroma-kit.png" />
+<file href="images/training/download-cycle-picture.png" />
+<file href="images/training/gentle-dry-left-picture.jpg" />
+<file href="images/training/gentle-dry-left-picture.png" />
+<file href="images/training/gentle-dry-right-bottom-picture.png" />
+<file href="images/training/gentle-dry-top-right-picture.png" />
+<file href="images/training/key-features-a.jpg" />
+<file href="images/training/key-features-b.jpg" />
+<file href="images/training/key-features-c.jpg" />
+<file href="images/training/key-features-d.jpg" />
+<file href="images/training/key-features-e.jpg" />
+<file href="images/training/key-features-f.jpg" />
+<file href="images/training/key-features-g.jpg" />
+<file href="images/training/key-features-h.jpg" />
+<file href="images/training/key-features-i.jpg" />
+<file href="images/training/key-features-j.jpg" />
+<file href="images/training/key-features-k.jpg" />
+<file href="images/training/landing-page" />
+<file href="images/training/left-arrow.png" />
+<file href="images/training/moving-hanger-left-picture.png" />
+<file href="images/training/moving-hanger-right-picture.png" />
+<file href="images/training/pants-crease-left-picture.png" />
+<file href="images/training/pants-crease-right-picture.png" />
+<file href="images/training/portable-water-container.png" />
+<file href="images/training/refresh-moving-rack.jpg" />
+<file href="images/training/refresh-true-steam.jpg" />
+<file href="images/training/refresh-true-steam.png" />
+<file href="images/training/right-arrow.png" />
+<file href="images/training/sanitary-bear.jpg" />
+<file href="images/training/sanitary-bear.png" />
+<file href="images/training/sanitary-hat.jpg" />
+<file href="images/training/sanitary-hat.png" />
+<file href="images/training/smart-diagnosis-picture.png" />
+<file href="images/training/styler-app-picture.png" />
+<file href="images/training/Styler_Layout_Comp_v1_QC1_EK_051816_HTML_SECTIONS.jpg" />
+<file href="images/training/versatile-rack.jpg" />
+<file href="images/training/versatile-rack.png" />
+<file href="imsmanifest.xml" />
+<file href="imsmetadata.xml" />
+<file href="index.html" />
+<file href="js/bootstrap.js" />
+<file href="js/navigation.js" />
+<file href="js/popcorn-complete.js" />
+<file href="js/quiz.js" />
+<file href="js/scorm-functions.js" />
+<file href="js/SCORM_API_wrapper.js" />
+<file href="js/site.js" />
+<file href="js/video-control.js" />
+<file href="js/videosub.js" />
+<file href="json/dictionary/text.json" />
+<file href="json/quiz-template.json" />
+<file href="json/quiz.json" />
+<file href="json/video/IPS_Technology.json" />
+<file href="json/video/video-two.json" />
+<file href="video/old/video-two-OLD.mp4" />
+<file href="video/old/video-two-OLD2.mp4" />
+<file href="video/old/video-two.mp4" />
+<file href="video/old/video.mp4" />
+<file href="video/section-1.mp4" />
+<file href="video/section-3.mp4" />
+<file href="video/section-4.mp4" />
+<file href="video/section-5.mp4" />
+<file href="video/subtitles.vtt" />
+<dependency identifierref="ALLRESOURCES" />
+</resource>
+<resource identifier="ALLRESOURCES" type="webcontent" adlcp:scormtype="asset">
+</resource>
+</resources>
+</manifest>

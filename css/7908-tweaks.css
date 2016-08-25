@@ -1,0 +1,365 @@
+/*GLOBAL STYLES */
+
+#right-arrow,
+#left-arrow {
+    position: relative;
+    background-image: url(../images/training/left-arrow.png);
+    width: 27px;
+    height: 38px;
+    top: 265px;
+}
+
+#right-arrow {
+    background-image: url(../images/training/right-arrow.png);
+    top: 227px;
+    right: -853px;
+}
+
+#right-arrow:hover,
+#left-arrow:hover {
+    cursor: pointer;
+}
+
+#side-navigation {
+    margin-top: 156px;
+    margin-left: 36px;
+    float: left;
+}
+
+#side-navigation ul {
+    margin-left: -26px;
+    line-height: 20px;
+}
+
+#side-navigation ul li {
+    list-style-type: none;
+}
+
+#side-navigation ul li a {
+    color: #6d6e71;
+    font-family: LGSmart;
+    font-size: 16.5px;
+}
+
+#side-navigation ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.side-nav-active {
+    font-weight: bold;
+    font-style: italic;
+    margin-left: -13px;
+}
+
+#right-content p {
+    font-size: 20px;
+    color: #6d6e71;
+    position: relative;
+    top: -20px;
+    width: 560px;
+    min-height: 50px;
+}
+
+#right-content {
+    float: right;
+    top: 152px;
+    left: 0px;
+    position: relative;
+    width: 690px;
+}
+
+h1 {
+    color: #a50034;
+    font-size: 35.5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 24.5px;
+    color: #a50034;
+    font-weight: bold;
+}
+
+h1,
+h2,
+#right-content p {
+    font-family: LGSmart;
+    margin: 0px;
+    line-height: 1;
+}
+
+
+/*Landing page styles */
+
+#landing-page {
+    background-image: url(../images/training/landing-page);
+}
+
+#landing-page:hover {
+    cursor: pointer;
+}
+
+
+/*Refresh page styles */
+
+#refresh {
+    background-image: url(../images/training/key-features-a.jpg);
+}
+
+#refresh-moving-rack,
+#refresh-true-steam {
+    background-image: url(../images/training/refresh-moving-rack.jpg);
+    width: 275px;
+    height: 189px;
+    float: left;
+}
+
+#picture-wrap {
+    margin-left: -40px;
+}
+
+#picture-wrap-refresh {
+    margin-left: 10px;
+}
+
+#refresh-true-steam {
+    background-image: url(../images/training/refresh-true-steam.jpg);
+    margin-left: 30px;
+}
+
+
+/*Sanitary page styles */
+
+#sanitary {
+    background-image: url(../images/training/key-features-b.jpg);
+}
+
+#sanitary-bear,
+#sanitary-hat {
+    background-image: url(../images/training/sanitary-bear.png);
+    width: 324px;
+    height: 187px;
+    float: left;
+}
+
+#sanitary-picture-wrap {
+    margin-top: 10px;
+}
+
+#sanitary-hat {
+    background-image: url(../images/training/sanitary-hat.png);
+}
+
+
+/* Gentle dry styles */
+
+#gentle-dry {
+    background-image: url(../images/training/key-features-c.jpg);
+}
+
+#gentle-dry-left-picture {
+    background-image: url(../images/training/gentle-dry-left-picture.png);
+    width: 296px;
+    height: 172px;
+}
+
+#gentle-dry-picture-wrap {
+    margin-top: 10px;
+}
+
+#gentle-dry-right-top-picture {
+    background-image: url(../images/training/gentle-dry-top-right-picture.png);
+    width: 206px;
+    height: 194px;
+    float: right;
+    margin-top: -195px;
+    margin-right: 100px;
+}
+
+#gentle-dry-right-bottom-picture {
+    background-image: url(../images/training/gentle-dry-right-bottom-picture.png);
+    width: 207px;
+    height: 179px;
+    margin-top: -178px;
+    margin-left: 382px;
+}
+
+
+/*Moving hanger styles */
+
+#moving-hanger {
+    background-image: url(../images/training/key-features-d.jpg);
+}
+
+#moving-hanger-left-picture,
+#moving-hanger-right-picture {
+    background-image: url(../images/training/moving-hanger-left-picture.png);
+    width: 311px;
+    height: 223px;
+    float: left;
+}
+
+#moving-hanger-right-picture {
+    background-image: url(../images/training/moving-hanger-right-picture.png);
+}
+
+
+/*Aroma kit styles */
+
+#aroma-kit {
+    background-image: url(../images/training/key-features-e.jpg);
+}
+
+#aroma-kit-picture {
+    background-image: url(../images/training/aroma-kit.png);
+    width: 625px;
+    height: 303px;
+    float: left;
+}
+
+#aroma-kit-picture-wrap {
+    margin-top: -30px;
+}
+
+
+/* Versatile rack styles */
+
+#versatile-rack {
+    background-image: url(../images/training/key-features-f.jpg);
+}
+
+#versatile-rack-picture-wrap {
+    margin-top: -30px;
+}
+
+#versatile-rack-picture {
+    background-image: url(../images/training/versatile-rack.png);
+    width: 625px;
+    height: 303px;
+    float: left;
+}
+
+
+/* Portable water container styles */
+
+#portable-water-container {
+    background-image: url(../images/training/key-features-g.jpg);
+}
+
+#portable-water-container-picture-wrap {
+    margin-left: 50px;
+}
+
+#portable-water-container-picture {
+    background-image: url(../images/training/portable-water-container.png);
+    width: 499px;
+    height: 286px;
+    float: left;
+}
+
+
+/* Pants crease styles */
+
+#pants-crease {
+    background-image: url(../images/training/key-features-h.jpg);
+}
+
+#pants-crease-picture-wrap {
+    margin-left: 0px;
+}
+
+#pants-crease-picture-left,
+#pants-crease-picture-right {
+    background-image: url(../images/training/pants-crease-left-picture.png);
+    width: 335px;
+    height: 231px;
+    float: left;
+}
+
+#pants-crease-picture-right {
+    background-image: url(../images/training/pants-crease-right-picture.png);
+    width: 282px;
+    height: 232px;
+}
+
+
+/*Smart diagnosis styles */
+
+#smart-diagnosis {
+    background-image: url(../images/training/key-features-i.jpg);
+}
+
+#smart-diagnosis-picture {
+    background-image: url(../images/training/smart-diagnosis-picture.png);
+    width: 145px;
+    height: 199px;
+    float: left;
+}
+
+#smart-diagnosis-picture-wrap {
+    margin-left: 470px;
+    margin-top: -30px;
+}
+
+
+/*download cycle styles */
+
+#download-cycle {
+    background-image: url(../images/training/key-features-j.jpg);
+}
+
+#download-cycle-picture {
+    background-image: url(../images/training/download-cycle-picture.png);
+    width: 178px;
+    height: 233px;
+    float: left;
+}
+
+#download-cycle-picture-wrap {
+    margin-left: 450px;
+    margin-top: -30px;
+}
+
+
+/*styler coach styles */
+
+#styler-coach {
+    background-image: url(../images/training/key-features-k.jpg);
+}
+
+#styler-coach-picture-wrap {
+    margin-left: 250px;
+    margin-top: -30px;
+}
+
+#styler-coach-picture {
+    background-image: url(../images/training/styler-app-picture.png);
+    width: 351px;
+    height: 259px;
+    float: left;
+}
+
+#video-left-arrow {
+    position: relative;
+    background-image: url(../images/training/left-arrow.png);
+    width: 27px;
+    height: 38px;
+    top: -264px;
+    left: -5px;
+}
+
+#video-left-arrow:hover,
+#video-right-arrow:hover {
+    cursor: pointer;
+}
+
+#video-right-arrow {
+    background-image: url(../images/training/right-arrow.png);
+    top: -302px;
+    right: -853px;
+    width: 27px;
+    height: 38px;
+    position: relative;
+}

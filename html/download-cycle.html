@@ -1,0 +1,59 @@
+<div id="download-cycle" class="image-background">
+    <audio style="display:none;" autoplay="true" controls="none">
+        <source src="audio/download-cycle.aac" type="audio/mp4">
+        <source src="audio/download-cycle.ogg" type="audio/ogg">
+    </audio>
+    <nav id="side-navigation">
+        <h2>Cycles</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('refresh');">Refresh</a></li>
+            <li><a onclick="GSI.switchPage('sanitary');">Sanitary</a></li>
+            <li><a onclick="GSI.switchPage('gentle-dry');">Gentle Dry</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('moving-hanger');">Moving Hanger</a></li>
+            <li><a onclick="GSI.switchPage('aroma-kit');">Aroma Kit</a></li>
+            <li><a onclick="GSI.switchPage('versatile-rack');">Versatile Rack</a></li>
+            <li><a onclick="GSI.switchPage('portable-water-container');">Portable Water Container</a></li>
+            <li><a onclick="GSI.switchPage('pants-crease');">Pants Crease</a></li>
+        </ul>
+        <h2>Smart Features</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('smart-diagnosis');">Smart Diagnosis</a></li>
+            <li><a onclick="GSI.switchPage('download-cycle');" class="side-nav-active">&bull;&nbsp;&nbsp;Download Cycle</a></li>
+            <li><a onclick="GSI.switchPage('styler-coach');">Styler Coach</a></li>
+        </ul>
+    </nav>
+    <div id="right-content">
+        <h1>Download Cycle</h1>
+        <br />
+        <p class="headline">
+            Want more cycles? No problem! The NFC Tag Download Cycle<sup>1</sup> feature allows you to select one of many additional cycles and download it directly to your Styler. You'll then be able to easily access it by selecting the “Download” option on your control panel.<sup>2</sup>
+        </p>
+        <div id="download-cycle-picture-wrap">
+            <div id="download-cycle-picture"></div>
+        </div>
+        <p class="download-cycle-footnote" style="position: relative; top: -33px; font-size: 15px; width:400px;"><sup>1</sup>Requires the free LG Smart Styler app for Android.
+            <br />
+            <sup>2</sup>The LG Styler holds up to two downloaded cycles.</p>
+    </div>
+    <div id="left-arrow" onclick="GSI.switchPage('smart-diagnosis')"></div>
+    <div id="right-arrow" onclick="GSI.switchPage('styler-coach')"></div>
+</div>
+
+<script type="text/javascript">
+    $("#download-cycle-picture").css("opacity", "0");
+    $(".download-cycle-footnote").css("opacity", "0");
+    $.when($("h1, .headline").css("marginLeft", "600px").animate({
+        marginLeft: "0px"
+    }, "slow")).then(function () {
+        $.when($("#download-cycle-picture").css("opacity", "0").animate({
+            opacity: 1
+        }, "slow")).then(function () {
+            $(".download-cycle-footnote").css("opacity", "0").animate({
+                opacity: 1
+            }, "slow");
+        })
+    })
+</script>

@@ -1,0 +1,49 @@
+<div id="sanitary" class="image-background"> 
+<audio style="display:none;" autoplay="true" controls="none">
+    <source src="audio/sanitary.aac" type="audio/mp4"> 
+    <source src="audio/sanitary.ogg" type="audio/ogg"> 
+</audio>
+    <nav id="side-navigation">
+        <h2>Cycles</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('refresh');">Refresh</a></li>
+            <li><a onclick="GSI.switchPage('sanitary');" class="side-nav-active">&bull;&nbsp;&nbsp;Sanitary</a></li>
+            <li><a onclick="GSI.switchPage('gentle-dry');">Gentle Dry</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('moving-hanger');">Moving Hanger</a></li>
+            <li><a onclick="GSI.switchPage('aroma-kit');">Aroma Kit</a></li>
+            <li><a onclick="GSI.switchPage('versatile-rack');">Versatile Rack</a></li>
+            <li><a onclick="GSI.switchPage('portable-water-container');">Portable Water Container</a></li>
+            <li><a onclick="GSI.switchPage('pants-crease');">Pants Crease</a></li>
+        </ul>
+        <h2>Smart Features</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('smart-diagnosis');">Smart Diagnosis</a></li>
+            <li><a onclick="GSI.switchPage('download-cycle');">Download Cycle</a></li>
+            <li><a onclick="GSI.switchPage('styler-coach');">Styler Coach</a></li>
+        </ul>
+    </nav>
+    <div id="right-content">
+        <h1>Sanitary</h1>
+        <br /> 
+        <p class="headline">
+           Reduce germs, bacteria, and allergens in clothes, bedding, kid’s toys, stuffed animals, and more. With the gentle power of TrueSteam, the Sanitary cycle will help reduce germs and bacteria.<sup>*</sup> 
+        </p>
+        <div id="sanitary-picture-wrap">
+            <div id="sanitary-bear"></div>
+            <div id="sanitary-hat"></div>
+        </div>
+        <p style="position: relative; top: 7px; font-size: 16px;">
+            *Intertek tested up to 99.9% effectiveness in reducing S. aureus bacteria and E. coli bacteria. See specifications sheet for test results.
+        </p>
+    </div>
+    <div id="left-arrow" onclick="GSI.switchPage('refresh')"></div>
+    <div id="right-arrow" onclick="GSI.switchPage('gentle-dry')"></div>
+</div>
+<script type="text/javascript">
+    $("h1, .headline").css("marginLeft", "600px").animate({marginLeft: "0px"}, "slow"); 
+    $("#sanitary-bear").css("opacity", "0").animate({opacity: 1}, "slow");
+    $("#sanitary-hat").css("opacity", "0").animate({opacity: 1}, "slow"); 
+</script>

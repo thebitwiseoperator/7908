@@ -1,0 +1,58 @@
+<div id="styler-coach" class="image-background">
+    <audio style="display:none;" autoplay="true" controls="none">
+        <source src="audio/styler-coach.aac" type="audio/mp4">
+        <source src="audio/styler-coach.ogg" type="audio/ogg">
+    </audio>
+    <nav id="side-navigation">
+        <h2>Cycles</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('refresh');">Refresh</a></li>
+            <li><a onclick="GSI.switchPage('sanitary');">Sanitary</a></li>
+            <li><a onclick="GSI.switchPage('gentle-dry');">Gentle Dry</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('moving-hanger');">Moving Hanger</a></li>
+            <li><a onclick="GSI.switchPage('aroma-kit');">Aroma Kit</a></li>
+            <li><a onclick="GSI.switchPage('versatile-rack');">Versatile Rack</a></li>
+            <li><a onclick="GSI.switchPage('portable-water-container');">Portable Water Container</a></li>
+            <li><a onclick="GSI.switchPage('pants-crease');">Pants Crease</a></li>
+        </ul>
+        <h2>Smart Features</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('smart-diagnosis');">Smart Diagnosis</a></li>
+            <li><a onclick="GSI.switchPage('download-cycle');">Download Cycle</a></li>
+            <li><a onclick="GSI.switchPage('styler-coach');" class="side-nav-active">&bull;&nbsp;&nbsp;Styler Coach</a></li>
+        </ul>
+    </nav>
+    <div id="right-content">
+        <h1>Styler Coach</h1>
+        <br />
+        <p class="headline">
+            Review usage stats such as history of cycles used, frequently used cycles, and recently used cycles. Activate the most frequently or most recently used cycle from the Styler Coach.<sup>*</sup>
+        </p>
+        <div id="styler-coach-picture-wrap">
+            <div id="styler-coach-picture"></div>
+        </div>
+        <p class="styler-coach-footnote" style="position: relative; top: -33px; font-size: 15px; width:400px;"><sup>*</sup>Requires the free LG Smart Styler app for Android.
+            <br />
+    </div>
+    <div id="left-arrow" onclick="GSI.switchPage('download-cycle')"></div>
+    <div id="right-arrow" onclick="GSI.switchPage('section-3')"></div>
+</div>
+
+<script type="text/javascript">
+    $("#styler-coach-picture").css("opacity", "0");
+    $(".styler-coach-footnote").css("opacity", "0");
+    $.when($("h1, .headline").css("marginLeft", "600px").animate({
+        marginLeft: "0px"
+    }, "slow")).then(function () {
+        $.when($("#styler-coach-picture").css("opacity", "0").animate({
+            opacity: 1
+        }, "slow")).then(function () {
+            $(".styler-coach-footnote").css("opacity", "0").animate({
+                opacity: 1
+            }, "slow");
+        })
+    })
+</script>

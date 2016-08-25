@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SCORM Training Module from Train of Thought Marketing.">
+    <meta name="author" content="Andrew Nystrom">
+    <!-- ***** THIS CSS FILE IS THE GENERIC BOOTSTRAP FROM GETBOOTSTRAP.COM ***** -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- ***** THIS IS THE CORE SITE CSS FILE. DO NOT ADD/MODIFY. OVERRIDDEN BY SPECIFIC-TWEAKS.CSS ***** -->
+    <link href="css/site.css" type="text/css" rel="stylesheet" />
+    <!-- ***** THIS CSS FILE IS USED TO OVERRIDE THE MAIN DESIGN THEME ***** -->
+    <link href="css/specific-tweaks.css" type="text/css" rel="stylesheet" />
+    <!-- ***** THIS IS THE CSS FILE THAT LAYS OUT THE DESIGN FOR THE TRAINING ***** -->
+    <link href="css/7908-tweaks.css" rel="stylesheet" type="text/css" />
+    <!-- ***** JQUERY. ***** -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- ****+ GENERIC BOOTSTRAP.JS FILE FROM GETBOOTSTRAP.COM ***** -->
+    <script src="js/bootstrap.js"></script>
+    <!-- ***** POPCORN.JS. USED TO CONTROL MEDIA; ONLY USED FOR VIDEO. ***** -->
+    <script src="js/popcorn-complete.js" type="text/javascript"></script>
+    <!-- ***** VIDEO-CONTROL.JS IS USED TO CONTROL THE VIDEO EXPERIENCE. CONSULT THE DOCUMENTATION ***** -->
+    <script src="js/video-control.js" type="text/javascript"></script>
+    <!-- ***** VIDEOSUB.JS IS USED TO CONTROL THE CLOSED CAPTIONING. CONSULT THE DOCUMENTATION ***** -->
+    <script src="js/videosub.js"></script>
+    <!-- ***** THE SCORM WRAPPER. CONSULT THE DOCUMENTATION. DO NOT MODIFY. ***** -->
+    <script src="js/SCORM_API_wrapper.js" type="text/javascript"></script>
+    <!-- ***** FUNCTIONS TO MAKE YOUR LIFE IN SCORM EASIER. CONSULT THE DOCUMENTATION. DO NOT MODIFY ***** -->
+    <script src="js/scorm-functions.js" type="text/javascript"></script>
+    <!-- ***** THIS JS FILE IS USED TO CONTROL THE TRAINING MODULE ***** -->
+    <script src="js/site.js" type="text/javascript"></script>
+    <!-- ***** THIS JS FILE IS USED TO CONTROL THE QUIZ ***** -->
+    <script src="js/quiz.js" type="text/javascript"></script>
+    <script src="js/navigation.js" type="text/javascript"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <title></title>
+</head>
+
+<body onLoad="init(); GSI.changeSiteTitle(); GSI.switchPage('landing-page');">
+    <div id="page-wrapper">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" onClick="GSI.resetTraining();">
+                    <div id="training-logo"><span data-index="0"></span></div>
+                </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <div id="product-name">
+                    <script>
+                        GSI.writeProductName();
+                    </script>
+                </div>
+                <!--<a href="#" class="closed-captions-button-off" title="Closed Captions" onclick="videoControl.toggleClosedCaptioning(); videoControl.switchCCImage();"></a>-->
+                <a href="#" class="volume-button" title="Volume" onclick="videoControl.toggleMute();"></a>
+                <a href="#" id="legal-link" title="Open Legal" onclick="GSI.openLegal();">Legal</a>
+            </div>
+        </nav>
+        <div id="legal"></div>
+        <!-- ***** #MAIN-CONTENT HOLDS THE CONTENT THAT IS LOADED VIA SITE.JS. ***** -->
+        <div class="container" id="main-content"></div>
+        <div id="sub-navigation-toggle-container" onclick="GSI.slideSubNavigation();">
+            <div id="sub-navigation-toggle"></div>
+        </div>
+        <div id="sub-navigation">
+            <ul>
+                <li onclick="GSI.switchPage('section-1');">Introduction</li>
+                <li>&bull;</li>
+                <li onclick="GSI.switchPage('refresh');">Key Features</li>
+                <li>&bull;</li>
+                <li onclick="GSI.switchPage('section-3');">Easy Installation</li>
+                <li>&bull;</li>
+                <li onclick="GSI.switchPage('section-4');">Easy Maintenance</li>
+                <li>&bull;</li>
+                <li onclick="GSI.switchPage('section-5');">Recap</li>
+            </ul>
+        </div>
+        <!-- ***** #LEGAL HOLDS THE LEGAL CONTENT THAT IS LOADED VIA LEGAL.HTML/SITE.JS. ***** -->
+    </div>
+</body>
+</html>

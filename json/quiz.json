@@ -1,0 +1,167 @@
+{
+    "question": 
+    [
+        {   
+            "id":"0", 
+            "title":"What is the name of the steam-generating technology the LG Styler uses to freshen clothes?", 
+            "correctResponse":"Bravo! The LG Styler uses TrueSteam to generate steam and freshen clothes.", 
+            "incorrectResponse":"Sorry, that’s not quite right. The LG Styler uses TrueSteam to generate steam and freshen clothes.",
+            "correctAnswer":"2", 
+            "answers": 
+            [ 
+                {"0":"GentleSteam"}, 
+                {"1":"DrySteam"}, 
+                {"2":"TrueSteam"},
+                {"3":"Gentle Dry"}
+            ]
+        },
+        {   
+            "id":"1", 
+            "title":"True or False: The Styler eliminates the need for a dry cleaner.", 
+            "correctResponse":"You’re on a roll! The Styler keeps garments fresh, meaning you can wait longer between trips to the dry cleaners, but it is not a replacement for a dry clean service.", 
+            "incorrectResponse":"Whoops! The Styler keeps garments fresh, meaning you can wait longer between trips to the dry cleaners, but it is not a replacement for a dry clean service.",
+            "correctAnswer":"1", 
+            "answers": 
+            [ 
+                {"0":"True"}, 
+                {"1":"False"}
+            ]
+        },
+        {   
+            "id":"2", 
+            "title":"What feature allows you to infuse your clothes with fresh scents by using your favorite scented dyer sheets?", 
+            "correctResponse":"Nice! The Aroma Kit allows you to infuse your clothes with fresh scents by swapping out scented dryer sheets!", 
+            "incorrectResponse":"Missed it! The Aroma Kit allows you to infuse your clothes with fresh scents by swapping out scented dryer sheets!",
+            "correctAnswer":"1", 
+            "answers": 
+            [ 
+                {"0":"Soap Dispenser"}, 
+                {"1":"Aroma Kit"}, 
+                {"2":"TrueSteam"},
+                {"3":"Smell Blaster"}
+            ]
+        },
+        {   
+            "id":"3", 
+            "title":"Where is the best place to install the LG Styler?", 
+            "correctResponse":"That’s right! The LG Styler adds the convenience of being able to refresh clothes quickly, making it a must-have anywhere you need to keep yourself looking fresh! ", 
+            "incorrectResponse":"Oops! The LG Styler adds the convenience of being able to refresh clothes quickly, making it a must-have anywhere you need to keep yourself looking fresh!",
+            "correctAnswer":"3", 
+            "answers": 
+            [ 
+                {"0":"An office"}, 
+                {"1":"At home"}, 
+                {"2":"In an airport lounge"}, 
+                {"3":"All of the above"}
+            ]
+        },
+        {   
+            "id":"4", 
+            "title":"What feature allows you to troubleshoot maintenance issues with your LG Styler?", 
+            "correctResponse":"Excellent! The LG Smart Styler App includes the Smart Diagnosis feature, which quickly identifies many maintenance issues with your LG Styler.", 
+            "incorrectResponse":"Try again! The LG Smart Styler App includes the Smart Diagnosis feature, which quickly identifies many maintenance issues with your LG Styler.",
+            "correctAnswer":"0", 
+            "answers": 
+            [ 
+                {"0":"Smart Diagnosis"}, 
+                {"1":"Styler Doctor"},
+                {"2":"Clever Coach"}, 
+                {"3":"Intelligent Repair"}
+            ]
+        },
+        {   
+            "id":"5", 
+            "title":"True or False: The LG Styler only treats clothes.", 
+            "correctResponse":"Great job! The LG Styler refreshes garments as well as soft toys, pillows, towels, and bedding!", 
+            "incorrectResponse":"That’s incorrect. The LG Styler refreshes garments as well as soft toys, pillows, towels, and bedding!",
+            "correctAnswer":"1", 
+            "answers": 
+            [ 
+                {"0":"True"}, 
+                {"1":"False"}
+            ]
+        },
+        {   
+            "id":"6", 
+            "title":"True or False: You can expand on the default cycles by downloading more cycles from the LG Smart Styler app.", 
+            "correctResponse":"Yes! There are plenty of cycles available for download from the LG Smart Styler app, so you can find the perfect cycle for your needs.", 
+            "incorrectResponse":"Nope. There are plenty of cycles available for download from the LG Smart Styler app, so you can find the perfect cycle for your needs.",
+            "correctAnswer":"0", 
+            "answers": 
+            [ 
+                {"0":"True"}, 
+                {"1":"False"}
+            ]
+        },
+        {   
+            "id":"7", 
+            "title":"What LG Styler cycle allows you to dry sensitive clothes that can’t go in a conventional dryer?", 
+            "correctResponse":"You got it! Gentle Dry is a temperature drying process for delicate items.", 
+            "incorrectResponse":"Not quite. Gentle Dry is a temperature drying process for delicate items.",
+            "correctAnswer":"1", 
+            "answers": 
+            [ 
+                {"0":"Hyper Dry"}, 
+                {"1":"Gentle Dry"},
+                {"2":"Quick Dry"}, 
+                {"3":"Low Dry"}
+            ]
+        }, 
+        {   
+            "id":"8", 
+            "title":"What LG Smart Styler app feature allows you to review usage stats such as history of cycles used, frequently used cycles, and recently used cycles?", 
+            "correctResponse":"You’ve got this! Styler Coach is the feature that allows you to review usage stats such as history of cycles used, frequently used cycles, and recently used cycles.", 
+            "incorrectResponse":"Incorrect! Styler Coach is the feature that allows you to review usage stats such as history of cycles used, frequently used cycles, and recently used cycles.",
+            "correctAnswer":"0", 
+            "answers": 
+            [ 
+                {"0":"Styler Coach"}, 
+                {"1":"Download Cycle"},
+                {"2":"Smart Diagnosis"}, 
+                {"3":"None of the above"}
+            ]
+        },
+        {   
+            "id":"9", 
+            "title":" The LG Styler can help preserve creases in pants with what?", 
+            "correctResponse":"Sweet! The LG Styler has a pants crease press built into the door for pants crease care.", 
+            "incorrectResponse":"Try again! The LG Styler has a pants crease press built into the door for pants crease care.",
+            "correctAnswer":"2", 
+            "answers": 
+            [ 
+                {"0":"A pants folder in the bottom drawer"}, 
+                {"1":"A special steam course for drying pants"},
+                {"2":"A pants crease press built into the door"}, 
+                {"3":"None of the above"}
+            ]
+        },
+        {   
+            "id":"10", 
+            "title":"The LG Styler is extremely versatile because:", 
+            "correctResponse":"Perfect! The LG Styler’s reversible door, lack of plumbing, and slim, compact size allows it to be installed easily in all kinds of settings!", 
+            "incorrectResponse":"So close! The LG Styler’s reversible door, lack of plumbing, and slim, compact size allows it to be installed easily in all kinds of settings!",
+            "correctAnswer":"3", 
+            "answers": 
+            [ 
+                {"0":"The door can be customized to open from the right or the left"}, 
+                {"1":"It requires no plumbing"},
+                {"2":"It is slim and compact"}, 
+                {"3":"All of the above"}
+            ]
+        },
+        {   
+            "id":"11", 
+            "title":"Besides steam, what process helps relax the wrinkles and aid the steam as it penetrates fabric?", 
+            "correctResponse":"Perfect! With the Moving Hanger component, the hangers shake during the process to help relax the wrinkles and aid the steam as it penetrates fabric. ", 
+            "incorrectResponse":"Yikes! That’s not it! With the Moving Hanger component, the hangers shake during the process to help relax the wrinkles and aid the steam as it penetrates fabric.",
+            "correctAnswer":"2", 
+            "answers": 
+            [ 
+                {"0":"TrueSteam"}, 
+                {"1":"Sanitary Cycle"},
+                {"2":"Moving Hanger"}, 
+                {"3":"Styler Coach"}
+            ]
+        }
+    ]
+}

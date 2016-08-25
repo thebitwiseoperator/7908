@@ -1,0 +1,54 @@
+<div id="moving-hanger" class="image-background">
+    <audio style="display:none;" autoplay="true" controls="none">
+        <source src="audio/moving-hanger.aac" type="audio/mp4">
+        <source src="audio/moving-hanger.ogg" type="audio/ogg">
+    </audio>
+    <nav id="side-navigation">
+        <h2>Cycles</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('refresh');">Refresh</a></li>
+            <li><a onclick="GSI.switchPage('sanitary');">Sanitary</a></li>
+            <li><a onclick="GSI.switchPage('gentle-dry');">Gentle Dry</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('moving-hanger');" class="side-nav-active">&bull;&nbsp;&nbsp;Moving Hanger</a></li>
+            <li><a onclick="GSI.switchPage('aroma-kit');">Aroma Kit</a></li>
+            <li><a onclick="GSI.switchPage('versatile-rack');">Versatile Rack</a></li>
+            <li><a onclick="GSI.switchPage('portable-water-container');">Portable Water Container</a></li>
+            <li><a onclick="GSI.switchPage('pants-crease');">Pants Crease</a></li>
+        </ul>
+        <h2>Smart Features</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('smart-diagnosis');">Smart Diagnosis</a></li>
+            <li><a onclick="GSI.switchPage('download-cycle');">Download Cycle</a></li>
+            <li><a onclick="GSI.switchPage('styler-coach');">Styler Coach</a></li>
+        </ul>
+    </nav>
+    <div id="right-content">
+        <h1>Moving Hanger</h1>
+        <br />
+        <p class="headline">
+            The hangers shake during the process to help relax the wrinkles and to aid the steam as it penetrates fabric.
+        </p>
+        <div id="moving-hanger-left-picture"></div>
+        <div id="moving-hanger-right-picture"></div>
+    </div>
+    <div id="left-arrow" onclick="GSI.switchPage('gentle-dry')"></div>
+    <div id="right-arrow" onclick="GSI.switchPage('aroma-kit')"></div>
+</div>
+
+<script type="text/javascript">
+    $("#moving-hanger-left-picture, #moving-hanger-right-picture").css("opacity", "0");
+    $.when($("h1, .headline").css("marginLeft", "600px").animate({
+        marginLeft: "0px"
+    }, "slow")).then(function () {
+        $.when($("#moving-hanger-left-picture").css("opacity", "0").animate({
+            opacity: 1
+        }, "slow")).then(function () {
+            $("#moving-hanger-right-picture").css("opacity", "0").animate({
+                opacity: 1
+            }, "slow");
+        })
+    })
+</script>

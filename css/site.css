@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    color: #3985B7;
+}
+
+body {
+    width: 960px;
+    height: 590px;
+    /*the navigation is 50px tall... */
+    background-color: white;
+}
+
+
+/************BELOW IS THE CSS TO MODIFY THE LOOK AND FEEL OF THE NAVIGATION ********/
+
+.navbar-collapse {
+    width: 960px;
+}
+
+
+/*-----INACTIVE TOP-LEVEL NAVIGATION TEXT COLOR -----*/
+
+.navbar-inverse .navbar-nav li a {
+    color: darkgrey;
+}
+
+
+/*-----INACTIVE DROP DOWN TEXT COLOR -----*/
+
+.dropdown-menu li a {
+    color: deeppink !important;
+}
+
+
+/*-----ACTIVE TOP-LEVEL NAVIGATION TEXT COLOR -----*/
+
+.navbar-inverse .navbar-nav .open a,
+.navbar-inverse .navbar-nav .open a:hover,
+.navbar-inverse .navbar-nav .open a:focus {
+    color: white;
+}
+
+.navbar-inverse {
+    border: none !important;
+    width: 960px;
+}
+
+
+/************END NAVIGATION CSS ********/
+
+#main-content {
+    position: absolute;
+    top: 50px;
+    height: 540px;
+    width: 960px;
+}
+
+h1,
+p {
+    color: deeppink;
+}
+
+footer {
+    position: absolute;
+    top: 605px;
+    margin-left: 15px;
+}
+
+
+/******ALL OF THE LEGAL STUFF IS BELOW THIS LINE ******/
+
+.legal-link:visited,
+.legal-link:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.legal-link:hover {
+    color: deeppink;
+    text-decoration: none;
+}
+
+.legal-link {
+    text-decoration: none !important;
+}
+
+#legal {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    display: none;
+    color: back;
+}
+
+#legal p {
+    color: black;
+    padding: 15px;
+}
+
+#legal span {
+    font-size: 30px;
+    color: black !important;
+    position: absolute;
+    left: 855px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.legal-link span {
+    color: black;
+}
+
+
+/******ALL OF THE QUIZ STUFF IS BELOW THIS LINE ******/
+
+div.answer-container {
+    height: 30px;
+    padding-top: 5px;
+    background-color: #222222;
+    width: 940px;
+    margin: 0px 0px 10px 10px;
+}
+
+#quiz-answers {
+    min-height: 300px;
+}
+
+div.answer-container:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin: 0px 10px 0px 10px;
+    float: left;
+}
+
+#quiz-counter {
+    font-size: 10px;
+    float: right;
+    padding-top: 14px;
+    margin-right: 10px;
+}
+
+#quiz-question {
+    margin: 40px 0px 30px 0px;
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+}
+
+.solve:visited,
+.solve:link {
+    width: 58px;
+    height: 30px;
+    background-color: #222222;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    color: #3985B7;
+    text-decoration: none !important;
+    margin: 10px 0px 0px 10px;
+}
+
+.solve:hover,
+.close-response:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#correct-response,
+#incorrect-response {
+    width: 600px;
+    height: 300px;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -217px;
+    position: relative;
+    display: none;
+}
+
+#correct-response-image,
+#incorrect-response-image {
+    font-size: 135px;
+    margin-left: 10px;
+    padding-top: 30px;
+    float: left;
+}
+
+#correct-response-text,
+#incorrect-response-text {
+    float: right;
+    margin-top: 30px;
+    width: 429px;
+    padding: 10px;
+}
+
+.close-response {
+    width: 58px;
+    height: 30px;
+    background-color: #222222;
+    display: inline-block;
+    text-align: center;
+    color: #3985B7;
+    text-decoration: none !important;
+    position: absolute;
+    top: 260px;
+    left: 533px;
+    padding-top: 5px;
+}
+
+
+/****** --VIDEO CSS STARTS BELOW THIS LINE -- *****/
+
+.video-background {
+    height: 506px;
+    width: 900px;
+    margin-left: -15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.image-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 900px;
+    height: 506px;
+    overflow: hidden;
+}
+
+
+/****** --CLOSED CAPTIONING CSS STARTS BELOW THIS LINE -- ******/
+
+#closed-captioning {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 940px;
+}
+
+#settings-menu {
+    position: absolute;
+    left: -60px;
+}
+
+#settings-button {
+    left: 50px;
+}
+
+.volume {
+    font-size: 20px;
+}

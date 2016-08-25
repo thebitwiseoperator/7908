@@ -1,0 +1,16 @@
+<div id="video-blocker">
+    <video id="video" class="video-background" onclick="videoControl.play();">
+        <source src="video/section-5.mp4" type="video/mp4">
+        <track id="track" src="video/subtitles.vtt" srclang="en" kind="subtitles" default="true" />
+    </video>
+
+</div>
+<div id="video-left-arrow" onclick="GSI.switchPage('section-4')"></div>
+<div id="video-right-arrow" onclick="GSI.switchPage('quiz')"></div>
+<script type="text/javascript">
+    videoControl.theNameOfThisVideoIs("section-5");
+    $('video').videoSub();
+    GSI.enableSubNavigation(true);
+    GSIDefaults.enableSubNavSlide = true;
+    videoControl.play();
+</script>

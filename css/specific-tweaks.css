@@ -1,0 +1,348 @@
+a:active,
+a:focus,
+a:link,
+a:visited {
+    outline: none !important;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0px auto 0px auto;
+}
+
+@font-face {
+    font-family: 'LGSmart';
+    src: url(../fonts/LG/lg_smart_semibold-webfont.ttf) format('truetype'), url(../fonts/LG/lg_smart_semibold-webfont.eot), url(../fonts/LG/lg_smart_semibold-webfont-svg) format('svg'), url(../fonts/LG/lg_smart_semibold-webfont-woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LGSmart';
+    src: url(../fonts/LG/lg_smart_regular-webfont.ttf) format('truetype'), url(../fonts/LG/lg_smart_regular-webfont.eot), url(../fonts/LG/lg_smart_regular-webfont-svg) format('svg'), url(../fonts/LG/lg_smart_regular-webfont-woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LGSmart';
+    src: url(../fonts/LG/lg_smart_light-webfont.ttf) format('truetype'), url(../fonts/LG/lg_smart_light-webfont.eot), url(../fonts/LG/lg_smart_light-webfont-svg) format('svg'), url(../fonts/LG/lg_smart_light-webfont-woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar-brand {
+    width: 95px;
+    height: 42px;
+    background-image: url(../images/lg_logo.png);
+    display: block;
+    margin: 10px 0px 0px 10px;
+}
+
+.navbar {
+    margin: 0px auto 0px auto;
+}
+
+#navbar {
+    background-image: url(../images/header-background.png);
+    width: 900px;
+    height: 75px !important;
+    border: none;
+    margin-bottom: -20px;
+}
+
+#product-name {
+    font-size: 34px;
+    color: black;
+    font-family: 'LGSmart', sans-serif;
+    font-weight: 500;
+    height: 35px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 0px 0px 30px;
+}
+
+#home-page {
+    background-image: url(../images/start-screen.jpg);
+}
+
+.closed-captions-button-off {
+    background-image: url(../images/audio-normal.png);
+    height: 39px;
+    width: 39px;
+    display: block;
+    float: right;
+    margin: 7px 20px 0px 0px;
+}
+
+.volume-button {
+    background-image: url(../images/audio-normal.png);
+    height: 39px;
+    width: 39px;
+    display: block;
+    float: right;
+    margin: 7px 20px 0px 0px;
+}
+
+.volume-button-muted {
+    background-image: url(../images/audio-muted.png);
+}
+
+.closed-captions-button-off {
+    background-image: url(../images/closed-captions_1.png);
+}
+
+.closed-captions-button-on {
+    background-image: url(../images/closed-captions_2.png);
+}
+
+.videosub-bar {
+    display: none;
+}
+
+#quiz {
+    background-color: white;
+}
+
+div.answer-container {
+    width: 800px;
+    height: auto;
+    background-color: #cccccc;
+    font-size: 24px;
+    margin-left: 60px;
+    padding-top: 16px;
+}
+
+#quiz-question {
+    font-weight: 500;
+    font-family: 'LGSmart';
+    color: black;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 60px;
+    margin-top: 50px;
+}
+
+#quiz-counter {
+    color: black;
+    font-family: 'LGSmart';
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 50px 100px 0px 0px;
+}
+
+a.solve:link,
+a.solve:visited,
+a.solve:active {
+    background-color: #a50034 !important;
+    font-weight: 500;
+    color: white !important;
+    font-size: 24px !important;
+    padding: 12px 10px 8px;
+    width: 85px;
+    height: 50px;
+    font-family: 'LGSmart', sans-serif;
+    margin-left: 60px;
+}
+
+a.solve-grey:link,
+a.solve-grey:visited,
+a.solve-grey:active {
+    background-color: #969696 !important;
+}
+
+#incorrect-response,
+#correct-response {
+    margin-top: -334px;
+    width: 575px;
+    min-height: 180px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#incorrect-response-image,
+#correct-response-image {
+    background-image: url(../images/quiz-answer-incorrect.png);
+    width: 170px;
+    height: 207px;
+    padding: 0px;
+    margin: -19px 10px 0px -15px;
+    float: none;
+}
+
+#correct-response-image {
+    background-image: url(../images/quiz-answer-correct.png);
+}
+
+#incorrect-response p,
+#correct-response p {
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    width: auto
+}
+
+#incorrect-response p,
+#correct-response p {
+    color: black;
+    font-family: 'LGSmart', sans-serif;
+    font-size: 24px;
+    float: left;
+    padding: 20px 0px 0px 0px;
+    margin: -200px 0px 0px 184px;
+}
+
+.close-response {
+    height: 50px;
+    width: 100px;
+    background-color: #a50034;
+    color: white !important;
+    font-size: 24px !important;
+    padding: 12px 10px 8px;
+    font-family: 'LGSmart', sans-serif;
+    position: static;
+    float: right;
+}
+
+div.answer-container p {
+    margin-top: -7px;
+    font-family: 'LGSmart', sans-serif;
+    font-weight: 300;
+    color: black;
+    width: 750px;
+    margin-left: 35px;
+}
+
+#congrats {
+    background-color: white;
+}
+
+.congrats-text {
+    font-weight: normal;
+    color: black;
+    font-family: 'LGSmart', sans-serif;
+    font-size: 24px;
+}
+
+.congrats-headline {
+    margin-top: 100px;
+    font-weight: 600;
+    font-family: 'LGSmart', sans-serif;
+    color: #a50034;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.congrats-text,
+.congrats-headline {
+    margin-left: 32px;
+}
+
+#legal {
+    width: 960px;
+    height: 590px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+}
+
+#legal-link {
+    color: black;
+    font-family: 'LGSmart', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.close-legal-button {
+    background-image: url(../images/legalCloseButton.png);
+    height: 30px;
+    width: 30px;
+    position: relative;
+    z-index: 30;
+    display: block;
+    float: right;
+    margin: -24px -28px -30px 0px;
+}
+
+.legal-container {
+    width: 800px;
+    margin: 0px auto 0px auto;
+    border: 2px solid black;
+    padding: 10px;
+    position: relative;
+    top: 81px;
+    background-color: white;
+    z-index: 9999;
+}
+
+#sub-navigation {
+    background-image: url(../images/brushed-background.jpg);
+    height: 50px;
+    width: 867px;
+    position: relative;
+    z-index: 3;
+    top: 503px;
+    left: 844px;
+    right: 0px;
+    display: none;
+}
+
+#sub-navigation ul {
+    color: #FFF;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    padding: 10px 0px;
+    cursor: pointer;
+    list-style-type: none;
+    width: 800px;
+    font-family: 'LGSmart', sans-serif;
+    margin-left: 45px;
+}
+
+#sub-navigation ul li {
+    float: left;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+#sub-navigation-toggle-container {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    z-index: 10;
+    top: 531px;
+    left: -11px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#sub-navigation-toggle {
+    height: 39px;
+    width: 39px;
+    background-image: url(../images/section-menu-enabled.png);
+    background-repeat: no-repeat;
+    position: inherit;
+    top: -21px;
+    left: 15px;
+}
+
+.sub-navigation-toggle-closed {
+    background-image: url(../images/section-menu-close.png) !important;
+}
+
+#page-wrapper {
+    overflow: hidden;
+    height: 590px;
+    width: 900px;
+}

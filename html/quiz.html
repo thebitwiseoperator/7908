@@ -1,0 +1,20 @@
+<script type="text/javascript">
+    quiz.initializeAQuestion(quiz.questionIndex);
+    GSI.enableSubNavigation(false);
+</script>
+<div id="quiz" class="image-background">
+    <div id="quiz-counter"></div>
+    <div id="quiz-question"></div>
+    <div id="quiz-answers"></div>
+    <a href="#" class="solve" title="Solve" onClick="quiz.solveTheQuestion();">Submit</a>
+    <div id="correct-response">
+        <div id="correct-response-image"></div>
+        <p id="correct-response-text"></p>
+        <a href="#" class="close-response" title="Close" onClick="quiz.closeResponse();">Continue</a>
+    </div>
+    <div id="incorrect-response">
+        <div id="incorrect-response-image"></div>
+        <p id="incorrect-response-text"></p>
+        <a href="#" class="close-response" title="Close" onClick="quiz.closeResponse();">Continue</a>
+    </div>
+</div>

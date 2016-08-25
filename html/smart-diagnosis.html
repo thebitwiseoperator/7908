@@ -1,0 +1,58 @@
+<div id="smart-diagnosis" class="image-background">
+    <audio style="display:none;" autoplay="true" controls="none">
+        <source src="audio/smart-diagnosis.aac" type="audio/mp4">
+        <source src="audio/smart-diagnosis.ogg" type="audio/ogg">
+    </audio>
+    <nav id="side-navigation">
+        <h2>Cycles</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('refresh');">Refresh</a></li>
+            <li><a onclick="GSI.switchPage('sanitary');">Sanitary</a></li>
+            <li><a onclick="GSI.switchPage('gentle-dry');">Gentle Dry</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('moving-hanger');">Moving Hanger</a></li>
+            <li><a onclick="GSI.switchPage('aroma-kit');">Aroma Kit</a></li>
+            <li><a onclick="GSI.switchPage('versatile-rack');">Versatile Rack</a></li>
+            <li><a onclick="GSI.switchPage('portable-water-container');">Portable Water Container</a></li>
+            <li><a onclick="GSI.switchPage('pants-crease');">Pants Crease</a></li>
+        </ul>
+        <h2>Smart Features</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('smart-diagnosis');" class="side-nav-active">&bull;&nbsp;&nbsp;Smart Diagnosis</a></li>
+            <li><a onclick="GSI.switchPage('download-cycle');">Download Cycle</a></li>
+            <li><a onclick="GSI.switchPage('styler-coach');">Styler Coach</a></li>
+        </ul>
+    </nav>
+    <div id="right-content">
+        <h1>Smart Diagnosis</h1>
+        <br />
+        <p class="headline">
+            The LG Styler is equipped with all of the latest technology, even when it comes to troubleshooting. Smart Diagnosis&trade; technology helps you easily diagnose and solve many problems you might have.<sup>1</sup> Diagnose many problems without ever needing to call an LG representative. This application can record and quickly analyze issues and provide you with troubleshooting steps to get the problem fixed.<sup>2</sup>
+        </p>
+        <div id="smart-diagnosis-picture-wrap">
+            <div id="smart-diagnosis-picture"></div>
+        </div>
+        <p class="smart-diagnosis-footnote" style="position: relative; top: -33px; font-size: 15px; width:400px;"><sup>1</sup>Requires the free LG Smart Styler app for Android&trade;.
+            <br />
+            <sup>2</sup>Smart Diagnosis is designed to supplement existing methods of &nbsp;&nbsp;problem identification and may not be able to troubleshoot all issues.</p>
+    </div>
+    <div id="left-arrow" onclick="GSI.switchPage('pants-crease')"></div>
+    <div id="right-arrow" onclick="GSI.switchPage('download-cycle')"></div>
+</div>
+<script type="text/javascript">
+    $("#smart-diagnosis-picture").css("opacity", "0");
+    $(".smart-diagnosis-footnote").css("opacity", "0");
+    $.when($("h1, .headline").css("marginLeft", "600px").animate({
+        marginLeft: "0px"
+    }, "slow")).then(function () {
+        $.when($("#smart-diagnosis-picture").css("opacity", "0").animate({
+            opacity: 1
+        }, "slow")).then(function () {
+            $(".smart-diagnosis-footnote").css("opacity", "0").animate({
+                opacity: 1
+            }, "slow");
+        })
+    })
+</script>

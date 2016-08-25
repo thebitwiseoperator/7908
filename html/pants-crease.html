@@ -1,0 +1,52 @@
+<div id="pants-crease" class="image-background"> 
+<audio style="display:none;" autoplay="true" controls="none">
+    <source src="audio/pants-crease.aac" type="audio/mp4"> 
+    <source src="audio/pants-crease.ogg" type="audio/ogg"> 
+</audio>
+    <nav id="side-navigation">
+        <h2>Cycles</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('refresh');">Refresh</a></li>
+            <li><a onclick="GSI.switchPage('sanitary');">Sanitary</a></li>
+            <li><a onclick="GSI.switchPage('gentle-dry');">Gentle Dry</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('moving-hanger');">Moving Hanger</a></li>
+            <li><a onclick="GSI.switchPage('aroma-kit');" >Aroma Kit</a></li>
+            <li><a onclick="GSI.switchPage('versatile-rack');">Versatile Rack</a></li>
+            <li><a onclick="GSI.switchPage('portable-water-container');">Portable Water Container</a></li>
+            <li><a onclick="GSI.switchPage('pants-crease');"class="side-nav-active">&bull;&nbsp;&nbsp;Pants Crease</a></li>
+        </ul>
+        <h2>Smart Features</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('smart-diagnosis');">Smart Diagnosis</a></li>
+            <li><a onclick="GSI.switchPage('download-cycle');">Download Cycle</a></li>
+            <li><a onclick="GSI.switchPage('styler-coach');">Styler Coach</a></li>
+        </ul>
+    </nav>
+    <div id="right-content">
+        <h1>Pants Crease</h1>
+        <br /> 
+        <p class="headline">
+            Hang dress pants in the Styler’s pants crease press and it will help restore the pants crease while reducing wrinkles, keeping your pants looking freshly creased!  
+ 
+        </p>
+        <div id="pants-crease-picture-wrap">
+            <div id="pants-crease-picture-left"></div>
+            <div id="pants-crease-picture-right"></div>
+        </div>
+    </div>
+    <div id="left-arrow" onclick="GSI.switchPage('portable-water-container')"></div>
+    <div id="right-arrow" onclick="GSI.switchPage('smart-diagnosis')"></div>
+</div>
+
+<script type="text/javascript">
+    $("#pants-crease-picture-left").css("opacity", "0");
+    $("#pants-crease-picture-right").css("opacity", "0");
+    $.when( $("h1, .headline").css("marginLeft", "600px").animate({marginLeft: "0px"}, "slow")).then(function () { 
+        $.when( $("#pants-crease-picture-left").css("opacity", "0").animate({opacity: 1}, "slow")).then(function () { 
+            $("#pants-crease-picture-right").css("opacity", "0").animate({opacity: 1}, "slow");
+        })
+    })
+</script>

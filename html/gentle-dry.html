@@ -1,0 +1,67 @@
+<div id="gentle-dry" class="image-background">
+    <audio style="display:none;" autoplay="true" controls="none">
+        <source src="audio/gentle-dry.aac" type="audio/mp4">
+        <source src="audio/gentle-dry.ogg" type="audio/ogg">
+    </audio>
+    <nav id="side-navigation">
+        <h2>Cycles</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('refresh');">Refresh</a></li>
+            <li><a onclick="GSI.switchPage('sanitary');">Sanitary</a></li>
+            <li><a onclick="GSI.switchPage('gentle-dry');" class="side-nav-active">&bull;&nbsp;&nbsp;Gentle Dry</a></li>
+        </ul>
+        <h2>Components</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('moving-hanger');">Moving Hanger</a></li>
+            <li><a onclick="GSI.switchPage('aroma-kit');">Aroma Kit</a></li>
+            <li><a onclick="GSI.switchPage('versatile-rack');">Versatile Rack</a></li>
+            <li><a onclick="GSI.switchPage('portable-water-container');">Portable Water Container</a></li>
+            <li><a onclick="GSI.switchPage('pants-crease');">Pants Crease</a></li>
+        </ul>
+        <h2>Smart Features</h2>
+        <ul>
+            <li><a onclick="GSI.switchPage('smart-diagnosis');">Smart Diagnosis</a></li>
+            <li><a onclick="GSI.switchPage('download-cycle');">Download Cycle</a></li>
+            <li><a onclick="GSI.switchPage('styler-coach');">Styler Coach</a></li>
+        </ul>
+    </nav>
+    <div id="right-content">
+        <h1>Gentle Dry</h1>
+        <br />
+        <p class="headline" style="width:357px;">
+            The Styler’s heat pump system is able to provide a gentle, low temperature drying process for delicate items. Using an advanced heat pump system, it gently dries clothes after steaming.<sup>*</sup>
+            <br />
+            <br />
+            <span style="font-size:15px;">*Gentle Dry heat settings are approx. 100&deg; F</span>
+        </p>
+        <div id="gentle-dry-picture-wrap">
+            <div id="gentle-dry-left-picture"></div>
+        </div>
+        <div id="gentle-dry-right-picture-wrap">
+            <div id="gentle-dry-right-top-picture"></div>
+            <div id="gentle-dry-right-bottom-picture"></div>
+        </div>
+    </div>
+    <div id="left-arrow" onclick="GSI.switchPage('sanitary')"></div>
+    <div id="right-arrow" onclick="GSI.switchPage('moving-hanger')"></div>
+</div>
+<script type="text/javascript">
+    $("#gentle-dry-left-picture, #gentle-dry-right-top-picture, #gentle-dry-right-bottom-picture").css("opacity", "0");
+
+    $.when($("h1, .headline").css("marginLeft", "600px").animate({
+        marginLeft: "0px"
+    }, "slow")).then(function () {
+        $.when($("#gentle-dry-left-picture").css("opacity", "0").animate({
+            opacity: 1
+        }, "slow")).then(function () {
+            $.when($("#gentle-dry-right-bottom-picture").css("opacity", "0").animate({
+                opacity: 1
+            }, "slow")).then(function () {
+                $("#gentle-dry-right-top-picture").css("opacity", "0").animate({
+                    opacity: 1
+                }, "slow");
+            });
+        });
+
+    });
+</script>
